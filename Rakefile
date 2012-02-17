@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-OurAwesomeGame::Application.load_tasks
+DMGame::Application.load_tasks
