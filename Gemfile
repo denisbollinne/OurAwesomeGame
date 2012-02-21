@@ -25,7 +25,6 @@ end
 
 gem 'jquery-rails'
 gem 'devise'
-
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
@@ -40,5 +39,6 @@ gem 'devise'
 
 group :test do
   # Pretty printed test output
+  gem 'minitest'
   gem 'turn', :require => false
 end
