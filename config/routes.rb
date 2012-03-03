@@ -1,4 +1,6 @@
 OurAwesomeGame::Application.routes.draw do
+  resources :characters
+
   devise_for :users
 
   get "home/index"

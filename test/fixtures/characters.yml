@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  char_name: MyString
+  char_experience: 1
+  char_race: 1
+  char_class: 1
+  user: 
+
+two:
+  char_name: MyString
+  char_experience: 1
+  char_race: 1
+  char_class: 1
+  user: 

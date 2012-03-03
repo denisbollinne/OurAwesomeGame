@@ -11,7 +11,19 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120220181539) do
+ActiveRecord::Schema.define(:version => 20120303120259) do
+
+  create_table "characters", :force => true do |t|
+    t.string   "char_name"
+    t.integer  "char_experience"
+    t.integer  "char_race"
+    t.integer  "char_class"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "characters", ["user_id"], :name => "index_characters_on_user_id"
 
   create_table "users", :force => true do |t|
     t.string   "email",                  :default => "", :null => false
