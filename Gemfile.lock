@@ -1,3 +1,10 @@
+GIT
+  remote: git://github.com/jeffp/enumerated_attribute.git
+  revision: cb915e2f215581441e368cbb9abe3fc1c4159a8d
+  specs:
+    enumerated_attribute (0.3.0.beta1)
+      meta_programming (>= 0.2.1)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -45,8 +52,6 @@ GEM
       orm_adapter (~> 0.0.3)
       railties (~> 3.1)
       warden (~> 1.1.1)
-    enumerated_attribute (0.2.16)
-      meta_programming (>= 0.2.1)
     erubis (2.7.0)
     execjs (1.3.0)
       multi_json (~> 1.0)
@@ -139,7 +144,7 @@ PLATFORMS
 DEPENDENCIES
   coffee-rails (~> 3.1.1)
   devise
-  enumerated_attribute
+  enumerated_attribute!
   jquery-rails
   minitest
   pg

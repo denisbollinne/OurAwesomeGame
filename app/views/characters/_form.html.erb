@@ -14,18 +14,14 @@
   <div class="field">
     <%= f.label :char_name %><br />
     <%= f.text_field :char_name %>
-  </div>
-  <div class="field">
-    <%= f.label :char_experience %><br />
-    <%= f.number_field :char_experience %>
-  </div>
+  </div> 
   <div class="field">
     <%= f.label :char_race %><br />
-    <%= f.number_field :char_race %>
+    <%= f.enum_select  :char_race %>
   </div>
   <div class="field">
     <%= f.label :char_class %><br />
-    <%= f.number_field :char_class %>
+    <%= f.enum_select  :char_class %>
   </div>
  
   <div class="actions">

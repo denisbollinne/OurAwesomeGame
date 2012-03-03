@@ -43,6 +43,7 @@ class CharactersController < ApplicationController
   def create
     @character = Character.new(params[:character])
     @character.user = current_user
+    @character.char_experience = 0
     respond_to do |format|
       if @character.save
         format.html { redirect_to @character, notice: 'Character was successfully created.' }
