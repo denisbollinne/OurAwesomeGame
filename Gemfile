@@ -5,11 +5,13 @@ gem 'rails', '3.1.1'
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
+gem 'thin'
 
 group :development, :test do
   gem 'taps'
   gem 'rvm'
   gem 'sqlite3'
+  gem "eventmachine" , "1.0.0.beta.4.1"
 end
 
 group :production, :staging do
