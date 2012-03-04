@@ -63,6 +63,13 @@ class CharactersController < ApplicationController
     @character = Character.new(params[:character])
     @character.user = current_user
     @character.char_experience = 0
+    @character.position = Position.new
+    @character.position.pos_direction = 'None'
+    @character.position.pos_x = 0
+    @character.position.pos_y = 0
+    @character.position.pos_changed_date = Time.now
+ 
+    
     respond_to do |format|
       if @character.save
         format.html { redirect_to @character, notice: 'Character was successfully created.' }
