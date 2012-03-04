@@ -1,0 +1,24 @@
+<h1>Current character (in session)</h1>
+
+<p>
+  <b>Name:</b>
+  <%= @character.char_name %>
+</p>
+
+<p>
+  <b>XP:</b>
+  <%= @character.char_experience %>
+</p>
+
+<p>
+  <b>Race:</b>
+  <%= @character.char_race %>
+</p>
+
+<p>
+  <b>Class:</b>
+  <%= @character.char_class %>
+</p>
+
+
+<%= link_to 'Back', characters_path %>

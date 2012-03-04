@@ -11,6 +11,25 @@ class CharactersController < ApplicationController
     end
   end
 
+  #GET /characters/1/use
+  def use
+    @character = Character.where(:user_id => current_user.id).find(params[:id])
+
+    session[:current_character_id] = @character.id
+  end
+   
+  #GET /characters/current
+  #GET /characters/current.json
+  def current
+    @character = Character.where(:user_id => current_user.id).find(session[:current_character_id])
+      
+    respond_to do |format|
+      format.html # current.html.erb
+      format.json { render json: @character }
+    end
+  end
+   
+  
   # GET /characters/1
   # GET /characters/1.json
   def show
@@ -82,4 +101,6 @@ class CharactersController < ApplicationController
       format.json { head :ok }
     end
   end
+  
+  
 end

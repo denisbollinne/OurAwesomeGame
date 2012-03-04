@@ -1,5 +1,12 @@
 OurAwesomeGame::Application.routes.draw do
-  resources :characters
+  
+  match 'characters/current' => "characters#current"
+  #map.connect "characters/use", :controller => 'characters', :action => 'use/i'
+ # map.connect "characters/current", :controller => 'characters', :action => 'current'
+  
+  resources :characters do
+    get :use , :on => :member
+  end
 
   devise_for :users
 
